@@ -164,6 +164,20 @@ nav {
     align-items: center;
 }
 
+header,
+.main-page,
+.about,
+.skills,
+.contact {
+    position: relative;
+    z-index: 1000;
+}
+
+.projects {
+    position: relative;
+    z-index: 900;
+}
+
 .contact {
     height: 50vh;
     width: 100vw;
@@ -412,7 +426,6 @@ nav {
 }
 
 .project-text {
-    height: 100%;
     /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.25);
     position: absolute;
@@ -436,8 +449,6 @@ nav {
     }
 
     & p {
-        max-height: 75%;
-        max-width: 95%;
         overflow-y: scroll;
     }
 
