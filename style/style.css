@@ -13,6 +13,8 @@
 }
 
 html {
+    width: 100svw;
+    height: 100svw;
     scroll-behavior: smooth;
 }
 
@@ -411,7 +413,7 @@ nav {
 
 .project-text {
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     background-color: rgba(0, 0, 0, 0.25);
     position: absolute;
     z-index: 1;
@@ -521,7 +523,6 @@ nav {
 
 @media (max-width: 768px) {
     header {
-        justify-content: none;
         & .logo {
             margin-left: 1rem;
             font-size: 2rem;
@@ -552,8 +553,6 @@ nav {
     }
 
     .about {
-        background-color: #f97068;
-
         & .about-text {
             gap: 0;
             flex-direction: column;
@@ -565,7 +564,6 @@ nav {
     }
 
     .skills {
-        background-color: #d1d646;
         margin: 0;
         & .languages {
             gap: 10px;
