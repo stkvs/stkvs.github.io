@@ -86,7 +86,7 @@ nav {
         text-decoration: none;
         color: var(--AFWhite);
 
-        &:hover {
+        &:hover, &:active {
             text-decoration: underline;
             text-decoration-color: var(--VividSBlue);
         }
@@ -141,7 +141,7 @@ nav {
         font-weight: 800;
         font-size: 1.25rem;
 
-        &:hover {
+        &:hover, &:active {
             transition: 0.25s ease-in-out;
             background-color: var(--VividSBlue);
             text-decoration: underline;
@@ -319,27 +319,27 @@ header,
     }
 }
 
-.python:hover::after {
+.python:hover::after, .python:active::after {
     width: 80%;
 }
-.html:hover::after {
+.html:hover::after, .html:active::after {
     width: 85%
 }
-.css:hover::after {
+.css:hover::after, .css:active::after {
     width: 60%
 }
-.js:hover::after {
+.js:hover::after, .js:active::after {
     width: 20%;
 }
-.csharp:hover::after {
+.csharp:hover::after, .csharp:active::after {
     width: 10%;
 }
 
-.python:hover,
-.html:hover,
-.css:hover,
-.js:hover,
-.csharp:hover {
+.python:hover, .python:active,
+.html:hover, .html:active,
+.css:hover, .css:active,
+.js:hover, .js:active,
+.csharp:hover, .csharp:active {
     transition: 0.5s ease-in-out;
     background-color: var(--VividSBlue);
 
@@ -412,7 +412,7 @@ header,
         text-align: left;
     }
 
-    &:hover {
+    &:hover, &:active {
         transition: 0.5s ease;
         box-shadow: 0 0 10px var(--VividSBlue);
         scale: 0.95;
@@ -452,7 +452,7 @@ header,
         overflow-y: scroll;
     }
 
-    &:hover {
+    &:hover, &:active {
         transition: 0.5s ease-in-out;
         opacity: 1;
         backdrop-filter: blur(2px);
@@ -517,7 +517,7 @@ header,
         color: var(--AFWhite);
         font-size: 5rem;
 
-        &:hover {
+        &:hover, &:active {
             transition: 0.5s ease;
             color: var(--VividSBlue);
             background-color: var(--AFWhite);
