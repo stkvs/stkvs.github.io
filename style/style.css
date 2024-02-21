@@ -46,7 +46,7 @@ body {
 }
 
 header {
-    background-color: #d1d646;
+    background-color: #f97068;
     position: fixed;
     z-index: 10;
     width: 100vw;
@@ -87,7 +87,7 @@ nav {
         text-decoration: none;
         color: var(--AFWhite);
 
-        &:hover, &:active {
+        &:hover, &:focus, &:active {
             text-decoration: underline;
             text-decoration-color: var(--VividSBlue);
         }
@@ -142,7 +142,7 @@ nav {
         font-weight: 800;
         font-size: 1.25rem;
 
-        &:hover, &:active {
+        &:hover, &:focus, &:active {
             transition: 0.25s ease-in-out;
             background-color: var(--VividSBlue);
             text-decoration: underline;
@@ -320,27 +320,27 @@ header,
     }
 }
 
-.python:hover::after, .python:active::after {
+.python:hover::after, .python:focus::after, .python:active::after {
     width: 80%;
 }
-.html:hover::after, .html:active::after {
+.html:hover::after, .html:focus::after, .html:active::after {
     width: 85%
 }
-.css:hover::after, .css:active::after {
+.css:hover::after, .css:focus::after, .css:active::after {
     width: 60%
 }
-.js:hover::after, .js:active::after {
+.js:hover::after, .js:focus::after, .js:active::after {
     width: 20%;
 }
-.csharp:hover::after, .csharp:active::after {
+.csharp:hover::after, .csharp:focus::after, .csharp:active::after {
     width: 10%;
 }
 
-.python:hover, .python:active,
-.html:hover, .html:active,
-.css:hover, .css:active,
-.js:hover, .js:active,
-.csharp:hover, .csharp:active {
+.python:hover, .python:focus, .python:active,
+.html:hover, .html:focus, .html:active,
+.css:hover, .css:focus, .css:active,
+.js:hover, .js:focus, .js:active,
+.csharp:hover, .csharp:focus, .csharp:active {
     transition: 0.5s ease-in-out;
     background-color: var(--VividSBlue);
 
@@ -413,7 +413,7 @@ header,
         text-align: left;
     }
 
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
         transition: 0.5s ease;
         box-shadow: 0 0 10px var(--VividSBlue);
         scale: 0.95;
@@ -453,7 +453,7 @@ header,
         overflow-y: scroll;
     }
 
-    &:hover, &:active {
+    &:hover, &:focus, &:active {
         transition: 0.5s ease-in-out;
         opacity: 1;
         backdrop-filter: blur(2px);
@@ -518,7 +518,7 @@ header,
         color: var(--AFWhite);
         font-size: 5rem;
 
-        &:hover, &:active {
+        &:hover, &:focus, &:active {
             transition: 0.5s ease;
             color: var(--VividSBlue);
             background-color: var(--AFWhite);
