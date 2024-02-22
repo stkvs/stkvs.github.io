@@ -46,9 +46,9 @@ body {
 }
 
 header {
-    background-color: #f97068;
+    background-color: #0000004f;
     position: fixed;
-    z-index: 10;
+    z-index: 1100;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -165,7 +165,6 @@ nav {
     align-items: center;
 }
 
-header,
 .main-page,
 .about,
 .skills,
@@ -535,6 +534,8 @@ header,
 
 @media (max-width: 768px) {
     header {
+        position: fixed;
+        
         & .logo {
             margin-left: 1rem;
             font-size: 2rem;
