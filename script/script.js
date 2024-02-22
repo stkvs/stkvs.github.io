@@ -6,19 +6,19 @@ Array.from(projectTexts).forEach(projectText => {
     projectText.style.display = "none";
 });
 
-// Add event listeners for mouseenter (hover in) and mouseleave (hover out)
+// Add event listeners for click/tap to toggle project text visibility
 Array.from(projectImages).forEach((projectImage, index) => {
-    projectImage.addEventListener("mouseenter", function() {
-        // Add your code to execute when the mouse enters the element
-        // For example, change the element's background color
-        console.log("Mouse entered");
-        projectTexts[index].style.display = "block";
-    });
+    let isTextVisible = false;
 
-    projectImage.addEventListener("mouseleave", function() {
-        // Add your code to execute when the mouse leaves the element
-        // For example, revert the element's background color
-        console.log("Mouse left");
-        projectTexts[index].style.display = "none";
+    projectImage.addEventListener("click", function() {
+        // Toggle visibility of project text
+        if (!isTextVisible) {
+            projectTexts[index].style.display = "block";
+        } else {
+            projectTexts[index].style.display = "none";
+        }
+
+        // Update text visibility status
+        isTextVisible = !isTextVisible;
     });
 });
