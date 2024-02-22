@@ -48,7 +48,7 @@ body {
 header {
     /* background-color: #0000004f; */
     position: fixed;
-    z-index: 110;
+    z-index: 1100;
     width: 100vw;
     display: flex;
     justify-content: space-between;
