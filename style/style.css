@@ -680,6 +680,10 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .logo-button img {
+        top: -5vh;
+    }
+
     header {
         position: fixed;
         
