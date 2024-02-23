@@ -61,8 +61,8 @@ body {
 
 .backdrop-bg {
     opacity: 0;
-    height: 100vh;
-    width: 100vw;
+    height: 100svh;
+    width: 100svw;
     position: absolute;
     z-index: 7;
     backdrop-filter: blur(0); /* Initial backdrop-filter value */
@@ -122,8 +122,8 @@ canvas {
 
 #particles-js { 
     position:fixed; 
-    width: 100%; 
-    height: 100%; 
+    height: 100svh;
+    width: 100svw;
     background-color: #212738; 
     background-image: url(""); 
     background-repeat: no-repeat; 
