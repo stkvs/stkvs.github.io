@@ -274,6 +274,78 @@ nav {
     }
 }
 
+@media (min-width: 768px) {
+    #python-bar,
+    #html-bar,
+    #css-bar,
+    #js-bar,
+    #csharp-bar {
+        display: none;
+    }
+
+    .python,
+    .html,
+    .css,
+    .js,
+    .csharp {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--Aero); 
+            height: 100%;
+            width: 0;
+            z-index: 0;
+            transition: width 0.5s ease-in-out; 
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        
+        }
+    }
+
+
+    .python:hover::after, .python:focus::after, .python:active::after {
+        width: 80%;
+    }
+    .html:hover::after, .html:focus::after, .html:active::after {
+        width: 85%
+    }
+    .css:hover::after, .css:focus::after, .css:active::after {
+        width: 60%
+    }
+    .js:hover::after, .js:focus::after, .js:active::after {
+        width: 20%;
+    }
+    .csharp:hover::after, .csharp:focus::after, .csharp:active::after {
+        width: 10%;
+    }
+
+    .python:hover, .python:focus, .python:active,
+    .html:hover, .html:focus, .html:active,
+    .css:hover, .css:focus, .css:active,
+    .js:hover, .js:focus, .js:active,
+    .csharp:hover, .csharp:focus, .csharp:active {
+        transition: 0.5s ease-in-out;
+        background-color: var(--VividSBlue);
+
+        & span {
+            display: flex;
+            align-items: center;
+        }
+    }     
+}
+
 .python,
 .html,
 .css,
@@ -292,60 +364,6 @@ nav {
         color: var(--AFWhite);
         display: none;
         z-index: 100;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: var(--Aero); 
-        height: 100%;
-        width: 0;
-        z-index: 0;
-        transition: width 0.5s ease-in-out; 
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-}
-
-.python:hover::after, .python:focus::after, .python:active::after {
-    width: 80%;
-}
-.html:hover::after, .html:focus::after, .html:active::after {
-    width: 85%
-}
-.css:hover::after, .css:focus::after, .css:active::after {
-    width: 60%
-}
-.js:hover::after, .js:focus::after, .js:active::after {
-    width: 20%;
-}
-.csharp:hover::after, .csharp:focus::after, .csharp:active::after {
-    width: 10%;
-}
-
-.python:hover, .python:focus, .python:active,
-.html:hover, .html:focus, .html:active,
-.css:hover, .css:focus, .css:active,
-.js:hover, .js:focus, .js:active,
-.csharp:hover, .csharp:focus, .csharp:active {
-    transition: 0.5s ease-in-out;
-    background-color: var(--VividSBlue);
-
-    & span {
-        display: flex;
-        align-items: center;
     }
 }
 
@@ -397,6 +415,8 @@ nav {
     /* background-color: rgba(255, 255, 255, 0.1); */
     height: 250px;
     width: 43%;
+    max-height: 250px;
+    max-width: 43%;
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
@@ -426,22 +446,21 @@ nav {
 }
 
 .project-text {
-    /* width: 100%; */
+    display: none;
     background-color: rgba(0, 0, 0, 0.25);
     position: absolute;
-    z-index: 1;
+    z-index: 10000;
     padding: 10px;
-
     opacity: 0;
     
     top: 0;
     /* padding-top: 50%;
     padding-bottom: 15%; */
 
-    & h2 {
+    /* & h2 {
         position: relative;
         left: -10px;
-    }
+    } */
 
     & a {
         color: var(--VividSBlue);
@@ -449,12 +468,14 @@ nav {
     }
 
     & p {
+        max-height: 20%;
         overflow-y: scroll;
     }
 
     &:hover, &:focus, &:active {
         transition: 0.5s ease-in-out;
         opacity: 1;
+        display: block;
         backdrop-filter: blur(2px);
     }
 
@@ -515,7 +536,7 @@ nav {
     & i {
         text-decoration: none;
         color: var(--AFWhite);
-        font-size: 5rem;
+        font-size: 3rem;
 
         &:hover, &:focus, &:active {
             transition: 0.5s ease;
@@ -578,22 +599,74 @@ nav {
 
     .skills {
         margin: 0;
+        & .text-disable {
+            display: none
+        }
+
         & .languages {
             gap: 10px;
         }
 
         & .python,
-        .html,
-        .css,
-        .js,
-        .csharp {
+        & .html,
+        & .css,
+        & .js,
+        & .csharp {
+            background-color: var(--VividSBlue);
+            pointer-events: none;
             padding: 0;
-            flex-direction: column;
+            flex-direction: row;
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            z-index: 0;
+            transition: width 0.5s ease-in-out; 
 
             & h1 {
+                margin-left: 10px;
                 top: 0;
-                font-size: 1.5rem; 
+                font-size: 1.2rem; 
             }
+
+            & span {
+                margin-right: 10px;
+                font-size: 1.5rem; 
+                display: block;
+            }
+        }
+
+        #python-bar,
+        #html-bar,
+        #css-bar,
+        #js-bar,
+        #csharp-bar {
+            height: 100%;
+            position: absolute;
+            display: block;
+            background-color: var(--Aero);
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        #python-bar {
+            width: 80%;
+        }
+
+        #html-bar {
+            width: 85%;
+        }
+
+        #css-bar {
+            width: 60%;
+        }
+
+        #js-bar {
+            width: 20%;
+        }
+
+        #csharp-bar {
+            width: 10%;
         }
     }
 
@@ -607,6 +680,9 @@ nav {
             width: 100%;
         }
 
+        & .project-text {
+            display: none;
+        }
         & #atmosify,
         #rotating-cube {
             margin-top: 20px;
