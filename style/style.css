@@ -416,12 +416,12 @@ nav {
     height: 250px;
     width: 43%;
     max-height: 250px;
-    max-width: 43%;
     border-radius: 20px;
     text-align: center;
     overflow: hidden;
     
     & h2 {
+        font-size: 1rem;
         color: var(--AFWhite);
         font-family: "Kanit", sans-serif;
     }
@@ -446,8 +446,8 @@ nav {
 }
 
 .project-text {
-    display: none;
     background-color: rgba(0, 0, 0, 0.25);
+    height: 250px;
     position: absolute;
     z-index: 10000;
     padding: 10px;
@@ -468,14 +468,18 @@ nav {
     }
 
     & p {
-        max-height: 20%;
+        position: relative;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        max-height: 180px;
         overflow-y: scroll;
+        margin-bottom: 10px;
     }
 
     &:hover, &:focus, &:active {
         transition: 0.5s ease-in-out;
         opacity: 1;
-        display: block;
         backdrop-filter: blur(2px);
     }
 
@@ -678,11 +682,19 @@ nav {
         & .project {
             height: 95%;
             width: 100%;
+            box-shadow: 0 0 10px var(--VividSBlue);
         }
 
         & .project-text {
-            display: none;
+            position: relative;
+            top: -100%;
+            background-color: rgba(0, 0, 0, 0.25);
+            box-shadow: ;
+            backdrop-filter: blur(2px);
+            transition: none;
+            opacity: 1;
         }
+
         & #atmosify,
         #rotating-cube {
             margin-top: 20px;
