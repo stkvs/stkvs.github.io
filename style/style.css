@@ -80,7 +80,7 @@ body {
     display: block;
     z-index: 100;
     position: absolute;
-    top: 40%;
+    top: -5vh;
     perspective: 1000px; /* Adjust this value to change the depth of perspective */
     transition: transform 0.3s ease; /* Add smooth transition */
     height: 150px;
@@ -679,7 +679,13 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (orientation: landscape) {
+    .logo-button img {
+        top: -10vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
     .logo-button img {
         top: -5vh;
     }
