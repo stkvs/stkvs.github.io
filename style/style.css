@@ -679,9 +679,9 @@ nav {
     }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-height: 500px) {
     .logo-button img {
-        top: -10vh;
+        top: -15vh;
     }
 }
 
