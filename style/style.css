@@ -22,7 +22,7 @@ html {
 body {
     width: 100svw;
     height: 100svw;
-    background-color: var(--RBlack2);
+    background-color: var(--RBlack);
     overflow-x: hidden;
 }
 
