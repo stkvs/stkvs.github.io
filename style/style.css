@@ -1,5 +1,6 @@
 :root {
     --RBlack : #212738;
+    --RBlack2 : #171B27;
     --Bittersweet : #f97068;
     --Pear : #d1d646;
     --AFWhite : #edf2ef;
@@ -19,7 +20,7 @@ html {
 }
 
 body {
-    background-color: var(--RBlack);
+    background-color: var(--RBlack2);
     overflow-x: hidden;
 }
 
@@ -47,6 +48,7 @@ body {
 
 .cover {
     position: fixed;
+    top: 0;
     z-index: 5000;
     width: 100svw;
     height: 100svh;
@@ -113,23 +115,38 @@ body {
     }
 }
 
-canvas { 
-    display: block;
+#particle-js canvas { 
+    display: fixed;
     z-index: 10;
     vertical-align: bottom; 
 } 
 
-#particles-js { 
+#bg-particles-js canvas { 
+    position: fixed;
+    z-index: 5;
+    vertical-align: bottom; 
+} 
+
+#particles-js,
+#bg-particles-js { 
     position:fixed; 
+    top: 0;
     height: 100svh;
     width: 100svw;
-    background-color: #212738; 
     background-image: url(""); 
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: 50% 50%; 
 } 
     
+#particles-js {
+    background-color: var(--RBlack2);
+}
+
+#bg-particles-js {
+    background-color: var(--RBlack); 
+}
+
 .count-particles { 
     background: #000022; 
     position: absolute; 
