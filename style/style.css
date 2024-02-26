@@ -54,13 +54,6 @@ body {
     z-index: 5000;
     width: 100svw;
     height: 100svh;
-    
-    & .logo-button {
-        position: relative;
-        top: 40vh;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
 }
 
 .backdrop-bg {
@@ -73,14 +66,18 @@ body {
     transition: backdrop-filter 0.5s ease, opacity 0.5s ease; /* Transition both backdrop-filter and opacity */
 }
 
-.logo-button {
+.pulsing-logo {
     position: absolute;
     z-index: 50;
     display: flex;
     justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.logo-button img {
+.pulsing-logo img {
     display: block;
     z-index: 100;
     position: absolute;
@@ -88,19 +85,37 @@ body {
     transition: transform 0.3s ease; /* Add smooth transition */
     height: 150px;
     border: 2px solid transparent;
-    border-radius:25%;
+    border-radius:20px;
     padding: 10px;
     animation: background-pulse 2s infinite alternate; /* Use animation */
+}
 
-    &:hover {
-        transition: 0.3s ease; /* Add smooth transition */
-        transform-origin: center center;
-        scale: 1.1;
-        background-color: #212738;
-        box-shadow: 0 0 10px #57c4e5;
-        border-radius: 20px;
-        cursor: pointer;
-        animation: none;
+.pulsing-logo img:hover {
+    transition: 0.3s ease; /* Add smooth transition */
+    transform-origin: center center;
+    scale: 1.1;
+    background-color: #212738;
+    box-shadow: 0 0 10px #57c4e5;
+    border-radius: 20px;
+    cursor: pointer;
+    animation: none;
+}
+
+.pulsing-logo span {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    opacity: 1;
+    animation: pulseAnimation 2s ease-in infinite;
+}
+
+@keyframes pulseAnimation {
+    100% {
+        box-shadow: 0 0 10px hsla(144, 16%, 94%, 1);
+        background-color: hsla(144, 16%, 94%, 1); /* Start color */
+        opacity: 0;
+        transform: scale(1.5);
     }
 }
 
@@ -698,17 +713,7 @@ nav {
     }
 }
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
-    .logo-button img {
-        top: -15vh;
-    }
-}
-
 @media (orientation: portrait) and (max-width: 768px) {
-    .logo-button img {
-        top: -5vh;
-    }
-
     header {
         position: fixed;
         
