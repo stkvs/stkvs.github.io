@@ -20,6 +20,8 @@ html {
 }
 
 body {
+    width: 100svw;
+    height: 100svw;
     background-color: var(--RBlack2);
     overflow-x: hidden;
 }
