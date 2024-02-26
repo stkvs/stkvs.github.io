@@ -108,7 +108,9 @@ body {
     border-radius: 20px;
     opacity: 0;
     animation: pulseAnimation 2s ease-in infinite;
+    -webkit-animation: pulseAnimation 2s ease-in infinite;
     transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
 }
 
 @keyframes pulseAnimation {
