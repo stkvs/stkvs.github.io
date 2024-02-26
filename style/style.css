@@ -538,8 +538,6 @@ nav {
 .projects-container {
     margin-top: 10px ;
     background-color: hsla(225, 26%, 12%, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     width: 60%;
     height: 55%;
@@ -650,8 +648,6 @@ nav {
     width: 60%;
     height: 80%;
     background-color: hsla(225, 26%, 12%, 0.5);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
