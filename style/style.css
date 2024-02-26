@@ -537,7 +537,9 @@ nav {
 
 .projects-container {
     margin-top: 10px ;
-    background-color: #171B27;
+    background-color: hsla(225, 26%, 12%, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     width: 60%;
     height: 55%;
@@ -647,7 +649,9 @@ nav {
 .contact-areas {
     width: 60%;
     height: 80%;
-    background-color: #171B27;
+    background-color: hsla(225, 26%, 12%, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
