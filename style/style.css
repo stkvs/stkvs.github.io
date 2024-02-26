@@ -101,31 +101,6 @@ body {
     animation: none;
 }
 
-.pulsing-logo span {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-    opacity: 0;
-    animation: pulseAnimation 2s ease-in infinite;
-    -webkit-animation: pulseAnimation 2s ease-in infinite;
-    transition: opacity 0.2s ease;
-    -webkit-transition: opacity 0.2s ease;
-}
-
-@keyframes pulseAnimation {
-    1% {
-        opacity: 1;
-    }
-
-    100% {
-        box-shadow: 0 0 10px hsla(144, 16%, 94%, 1);
-        background-color: hsla(144, 16%, 94%, 1); /* Start color */
-        opacity: 0;
-        transform: scale(1.5);
-    }
-}
-
 @keyframes background-pulse {
     0% {
         background-color: transparent; /* Start color */
