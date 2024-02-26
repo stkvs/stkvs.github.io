@@ -319,7 +319,7 @@ nav {
 }
 
 .contact {
-    height: 50vh;
+    height: 15vh;
     width: 100vw;
 
     display: flex;
@@ -648,11 +648,13 @@ nav {
     width: 60%;
     height: 80%;
     background-color: hsla(225, 26%, 12%, 0.5);
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     
     & .get-ahold {
         position: relative;
@@ -665,9 +667,8 @@ nav {
     & .contact-links {
         display: flex;
         flex-direction: row;
-        gap: 10%;
+        gap: 20px;
         justify-content: center;
-        margin-top: 10%;
     }
 
     & h1 {
@@ -680,13 +681,13 @@ nav {
     & i {
         text-decoration: none;
         color: var(--AFWhite);
-        font-size: 3rem;
+        font-size: 2rem;
 
         &:hover, &:focus, &:active {
             transition: 0.5s ease;
             color: var(--VividSBlue);
             background-color: var(--AFWhite);
-            border-radius: 20px;
+            border-radius: 40%;
             box-shadow: 0 0 10px var(--AFWhite);
         }
     }
@@ -856,7 +857,6 @@ nav {
 
         & .contact-areas {
             padding: 20px;
-            margin-bottom: 10vh;
         }
         & .get-ahold {
             font-size: 2rem;
