@@ -106,11 +106,16 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 20px;
-    opacity: 1;
+    opacity: 0;
     animation: pulseAnimation 2s ease-in infinite;
+    transition: opacity 0.2s ease;
 }
 
 @keyframes pulseAnimation {
+    1% {
+        opacity: 1;
+    }
+
     100% {
         box-shadow: 0 0 10px hsla(144, 16%, 94%, 1);
         background-color: hsla(144, 16%, 94%, 1); /* Start color */
