@@ -717,7 +717,8 @@ nav {
     }
 }
 
-@media (orientation: portrait) and (max-width: 768px) {
+@media (orientation: portrait) and (max-width: 768px),
+ (orientation: landscape) and (max-height: 414px) {
     header {
         position: fixed;
         
