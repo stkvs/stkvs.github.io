@@ -637,14 +637,16 @@ nav {
     } */
 }
 
-#rotating-cube:hover .project-text,
-#atmosify:hover .project-text,
-#portfolio:hover .project-text {
-    position: absolute;
-    z-index: 10000;
-    transition: 0.5s ease-in-out;
-    opacity: 1;
-    backdrop-filter: blur(2px); 
+@media (min-width: 769px) {
+    #rotating-cube:hover .project-text,
+    #atmosify:hover .project-text,
+    #portfolio:hover .project-text {
+        position: absolute;
+        z-index: 10000;
+        transition: 0.5s ease-in-out;
+        opacity: 1;
+        backdrop-filter: blur(2px); 
+    }
 }
 
 
