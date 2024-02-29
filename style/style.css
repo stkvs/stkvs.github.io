@@ -708,20 +708,10 @@ nav {
         }
     }
 
-    & .fa-brands {
-        font-size: 1.9rem;
-    }
-
     & .mail a, 
     .social-icons {
         margin: 20px;
     }
-}
-
-.fa-xs {
-    line-height: normal;
-    vertical-align: none;
-    font-size: 0.9rem;
 }
 
 @media (orientation: portrait) and (max-width: 768px),
@@ -867,6 +857,7 @@ nav {
         #rotating-cube {
             margin-top: 20px;
         }
+
     }
 
     .contact {
