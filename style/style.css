@@ -586,8 +586,6 @@ nav {
 .project-text {
     background-color: rgba(0, 0, 0, 0.25);
     height: 250px;
-    position: absolute;
-    z-index: 10000;
     padding: 10px;
     opacity: 0;
     top: 0;
@@ -625,17 +623,30 @@ nav {
         margin-bottom: 10px;
     }
 
-    &:hover, &:focus, &:active {
+    /* &:hover, &:focus, &:active {
+        position: absolute;
+        z-index: 10000;
         transition: 0.5s ease-in-out;
         opacity: 1;
         backdrop-filter: blur(2px);
-    }
+    } */
 
     /* &:hover ~ .project img {
         filter: blur(1px);
         -webkit-filter: blur(10px);
     } */
 }
+
+#rotating-cube:hover .project-text,
+#atmosify:hover .project-text,
+#portfolio:hover .project-text {
+    position: absolute;
+    z-index: 10000;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+    backdrop-filter: blur(2px); 
+}
+
 
 .contact {
     & span {
