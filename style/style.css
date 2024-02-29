@@ -705,10 +705,11 @@ nav {
         &:hover, &:focus, &:active {
             transition: 0.5s ease;
             color: var(--VividSBlue);
-            background-color: var(--AFWhite);
-            border-radius: 40%;
-            box-shadow: 0 0 10px var(--AFWhite);
         }
+    }
+
+    & .fa-brands {
+        font-size: 1.9rem;
     }
 
     & .mail a, 
