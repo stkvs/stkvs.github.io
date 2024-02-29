@@ -717,6 +717,12 @@ nav {
     }
 }
 
+.fa-xs {
+    line-height: none;
+    vertical-align: none;
+    font-size: 0.9rem;
+}
+
 @media (orientation: portrait) and (max-width: 768px),
  (orientation: landscape) and (max-height: 414px) {
     header {
