@@ -719,7 +719,7 @@ nav {
 }
 
 .fa-xs {
-    line-height: none;
+    line-height: normal;
     vertical-align: none;
     font-size: 0.9rem;
 }
