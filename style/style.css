@@ -590,7 +590,6 @@ nav {
     z-index: 10000;
     padding: 10px;
     opacity: 0;
-    
     top: 0;
     /* padding-top: 50%;
     padding-bottom: 15%; */
@@ -599,6 +598,17 @@ nav {
         position: relative;
         left: -10px;
     } */
+
+    & h2 a {
+        text-decoration: none;
+        text-underline-offset: 3px;
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+            text-decoration-color: var(--VividSBlue);
+        }
+    }
 
     & a {
         color: var(--VividSBlue);
