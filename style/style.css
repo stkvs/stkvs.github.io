@@ -185,7 +185,7 @@ body {
 header {
     /* background-color: #0000004f; */
     position: fixed;
-    top: 0;
+    top: 10px;
     z-index: 1100;
     width: 100vw;
     display: flex;
@@ -719,6 +719,7 @@ nav {
 @media (orientation: portrait) and (max-width: 768px),
  (orientation: landscape) and (max-height: 414px) {
     header {
+        top: 0;
         position: fixed;
         
         & .logo {
