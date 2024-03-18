@@ -18,4 +18,4 @@ logo.addEventListener('click', () => {
     }, 500); // Adjust the timeout to match the transition duration
 });
 
-export { body, homePage }
+export { body, homePage, logo}

@@ -17,6 +17,6 @@ button.addEventListener('click', () => {
     setTimeout(() => {
         homePage.style.opacity = 1;
         bg.style.height = "100svh";
-        bg.style.position = "absolute";
+        bg.style.position = "absolute"
     }, 100);
 });
