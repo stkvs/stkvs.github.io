@@ -12,8 +12,9 @@ button.addEventListener('click', () => {
     homePage.style.transition = "opacity 0.5s ease";
     bg.style.display = "block";
 
-
     setTimeout(() => {
         homePage.style.opacity = 1;
+        bg.style.height = "100svh"
+        bg.style.position = "absolute"
     }, 100);
 });
