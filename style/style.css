@@ -538,7 +538,7 @@ nav {
     background-color: hsla(225, 26%, 12%, 0.5);
     border-radius: 20px;
     width: 60%;
-    height: 55%;
+    height: auto;
     padding: 20px;
     overflow-y: scroll;
     display: flex;
@@ -552,7 +552,7 @@ nav {
     /* flex: 1 1 calc(50% - 50px); */
     /* background-color: rgba(255, 255, 255, 0.1); */
     height: 250px;
-    width: 43%;
+    width: 400px;
     max-height: 250px;
     border-radius: 20px;
     text-align: center;
@@ -860,6 +860,7 @@ nav {
     .projects {
         & .projects-container {
             display: block;
+            height: 50%;
         }
 
         & .project {
