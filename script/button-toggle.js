@@ -9,23 +9,29 @@ button.addEventListener('click', () => {
     body.style.overflowY = "hidden";
     homePage.style.display = "block";
     
-    homePage.style.transition = "opacity .5s ease";
-    bgParticles.style.transition = "opacity .5s ease";
+    homePage.style.transition = "opacity 2s ease";
+    bgParticles.style.transition = "opacity 2s ease";
 
     setTimeout(() => {
         homePage.style.opacity = 1;
         bgParticles.style.opacity = 1;
+        positionBgParticles(); // Adjust position after showing
     }, 100);
 });
 
-// Listen for resize events
+// Function to adjust position of bgParticles
+function positionBgParticles() {
+    const windowHeight = window.innerHeight;
+    const bgParticlesHeight = bgParticles.offsetHeight;
+
+    // Calculate top position to center bgParticles vertically
+    const topPosition = (windowHeight - bgParticlesHeight) / 2;
+
+    // Set position style
+    bgParticles.style.top = `${topPosition}px`;
+}
+
+// Listen for resize events to reposition bgParticles
 window.addEventListener('resize', () => {
-    // Check if URL bar is visible
-    if (window.innerHeight < window.outerHeight) {
-        // URL bar is visible, hide bgParticles
-        bgParticles.style.opacity = 0;
-    } else {
-        // URL bar is not visible, show bgParticles
-        bgParticles.style.opacity = 1;
-    }
+    positionBgParticles();
 });
