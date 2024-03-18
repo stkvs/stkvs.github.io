@@ -9,14 +9,14 @@ button.addEventListener('click', () => {
 
     body.style.overflowY = "hidden";
     homePage.style.display = "block";
-    bgParticles.style.display = "block";
 
     homePage.style.transition = "opacity 0.5s ease";
-    bg.style.display = "block";
 
     setTimeout(() => {
         homePage.style.opacity = 1;
-        bg.style.height = "100svh";
-        bg.style.position = "absolute"
+        // bg.style.height = "100svh";
+        // bg.style.position = "absolute";
+        // bgParticles.style.display = "block";
+        // bg.style.display = "block";
     }, 100);
 });
