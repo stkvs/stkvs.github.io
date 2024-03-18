@@ -17,3 +17,5 @@ logo.addEventListener('click', () => {
         homePage.style.display = "none";
     }, 500); // Adjust the timeout to match the transition duration
 });
+
+export { body, homePage }

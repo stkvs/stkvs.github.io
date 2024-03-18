@@ -716,6 +716,28 @@ nav {
     }
 }
 
+.back-to-cover {
+    position: absolute;
+    z-index: 1000;
+    width: 50px;
+    height: auto;
+    right: 0;
+    top: 50%;
+    margin-right: 50px;
+}
+
+.back-to-cover:hover {
+    transition: 0.3s ease; /* Add smooth transition */
+    transform-origin: center center;
+    scale: 1.1;
+    background-color: #212738;
+    box-shadow: 0 0 10px #57c4e5;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    animation: none;
+}
+
 @media (orientation: portrait) and (max-width: 768px),
  (orientation: landscape) and (max-height: 414px) {
     header {
@@ -875,5 +897,15 @@ nav {
         & i {
             font-size: 2rem;
         }
+    }
+
+    .back-to-cover {
+        top: 75%;
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .back-to-cover:hover {
+        border-radius: 5px;
     }
 }
