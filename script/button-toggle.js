@@ -1,22 +1,21 @@
-import {body, homePage} from './cover-toggle.js'
+import { body, homePage } from './cover-toggle.js';
 
-const button = document.querySelector('.back-to-cover')
+const button = document.querySelector('.back-to-cover');
 
 button.addEventListener('click', () => {
     console.log("Clicked");
 
-    homePage.style.transition = "opacity 0.5s ease"; // Apply transition effect to opacity
-    body.style.overflowY = "hidden";
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 
+    body.style.overflowY = "hidden";
     homePage.style.display = "block";
+
+    homePage.style.transition = "opacity 0.5s ease";
 
     setTimeout(() => {
         homePage.style.opacity = 1;
-
-        // Reset scroll to the top of the page
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }, 100); // Add a slight delay for the transition to take effect smoothly
+    }, 100);
 });
