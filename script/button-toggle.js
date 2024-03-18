@@ -12,5 +12,11 @@ button.addEventListener('click', () => {
 
     setTimeout(() => {
         homePage.style.opacity = 1;
+
+        // Reset scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }, 100); // Add a slight delay for the transition to take effect smoothly
 });
