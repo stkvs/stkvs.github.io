@@ -5,10 +5,14 @@ const button = document.querySelector('.back-to-cover');
 button.addEventListener('click', () => {
     console.log("Clicked");
 
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+    const mainPage = document.querySelector('#main-page');
+
+    if (mainPage) {
+        window.scrollTo({
+            top: mainPage.offsetTop, 
+            behavior: 'smooth'
+        });
+    }
 
     body.style.overflowY = "hidden";
     homePage.style.display = "block";
