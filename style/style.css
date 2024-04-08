@@ -148,6 +148,7 @@ body {
 
 .bg-change {
     backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .count-particles { 
