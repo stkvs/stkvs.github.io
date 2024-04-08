@@ -146,6 +146,10 @@ body {
     background-color: var(--RBlack); 
 }
 
+.bg-change {
+    backdrop-filter: blur(20px);
+}
+
 .count-particles { 
     background: #000022; 
     position: absolute; 

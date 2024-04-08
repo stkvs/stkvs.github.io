@@ -1,6 +1,7 @@
 const body = document.querySelector('body')
 const homePage = document.querySelector('.cover');
 const logo = document.querySelector('.logo-blue');
+const particles = document.querySelector('#particles-js');
 
 body.style.overflowY = "hidden";
 
@@ -11,6 +12,7 @@ logo.addEventListener('click', () => {
     console.log("Clicked");
     homePage.style.opacity = 0;
     body.style.overflowY = "scroll";
+    particles.classList.remove("bg-change");
 
     // Wait for the transition to complete before hiding the element
     setTimeout(() => {
@@ -18,4 +20,4 @@ logo.addEventListener('click', () => {
     }, 500); // Adjust the timeout to match the transition duration
 });
 
-export { body, homePage, logo}
+export { body, homePage, logo, particles}
