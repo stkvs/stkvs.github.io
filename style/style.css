@@ -53,12 +53,12 @@ body {
     top: 0;
     z-index: 5000;
     width: 100svw;
-    height: 100svh;
+    height: 100dvh;
 }
 
 .backdrop-bg {
     opacity: 0;
-    height: 100svh;
+    height: 100dvh;
     width: 100svw;
     position: absolute;
     z-index: 7;
