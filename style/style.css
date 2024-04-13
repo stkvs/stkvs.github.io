@@ -643,6 +643,7 @@ nav {
 @media (min-width: 769px) {
     #rotating-cube:hover .project-text,
     #atmosify:hover .project-text,
+    #threeJS-earth:hover .project-text,
     #portfolio:hover .project-text {
         position: absolute;
         z-index: 10000;
