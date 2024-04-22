@@ -541,7 +541,7 @@ nav {
     background-color: hsla(225, 26%, 12%, 0.5);
     border-radius: 20px;
     width: 60%;
-    height: auto;
+    height: 50%;
     padding: 20px;
     overflow-y: scroll;
     display: flex;
@@ -575,7 +575,7 @@ nav {
 
     &:hover, &:focus, &:active {
         transition: 0.5s ease;
-        box-shadow: 0 0 10px var(--VividSBlue);
+        /* box-shadow: 0 0 10px var(--VividSBlue); */
         scale: 0.95;
     }
 }
@@ -871,7 +871,7 @@ nav {
         & .project {
             height: 95%;
             width: 100%;
-            box-shadow: 0 0 10px var(--VividSBlue);
+            /* box-shadow: 0 0 10px var(--VividSBlue); */
         }
 
         & .project-text {
