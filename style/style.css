@@ -645,7 +645,8 @@ nav {
     #atmosify:hover .project-text,
     #threeJS-earth:hover .project-text,
     #portfolio:hover .project-text,
-    #threeJS-saturn:hover .project-text {
+    #threeJS-saturn:hover .project-text,
+    #todolist:hover .project-text {
         position: absolute;
         z-index: 10000;
         transition: 0.5s ease-in-out;
@@ -887,7 +888,8 @@ nav {
         & #atmosify,
         #rotating-cube,
         #threeJS-earth,
-        #threeJS-saturn {
+        #threeJS-saturn,
+        #todolist {
             margin-top: 20px;
         }
 
