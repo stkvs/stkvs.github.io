@@ -476,7 +476,7 @@ p.description {
     align-items: center;
 }
 
-@media (max-width: 768px) or (pointer: coarse) and (orientation: portrait) {
+@media (max-width: 768px) and (pointer: coarse) and (orientation: portrait) {
     aside {
         height: 100dvh;
     }
