@@ -512,6 +512,7 @@ p.description {
 
     #skills .skills-box {
         flex-direction: column;
+        gap: 0;
     }
 
     #container {
