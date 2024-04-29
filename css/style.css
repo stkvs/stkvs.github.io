@@ -522,6 +522,10 @@ p.description {
     .icon-container object {
         width: 48px;
     }
+
+    .description {
+        overflow-y: auto scroll;
+    }
 }
 
 @media (orientation: landscape) and (pointer: coarse) {
