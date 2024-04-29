@@ -162,6 +162,31 @@ aside #social svg {
     width: 24px;
 }
 
+/* CSS */
+@keyframes fadeIn {
+    0% { 
+        opacity: 0; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: none;
+    }
+}
+  
+.animate {
+    animation: 
+        fadeIn 1s ease-in-out forwards,
+        moveUP 1s ease-in-out forwards;
+}
+
 .pages-container {
     position: absolute;
     top: 0;
@@ -327,7 +352,7 @@ aside #social svg {
     gap: 16px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #projects .title-container {
@@ -451,7 +476,7 @@ p.description {
     align-items: center;
 }
 
-@media (max-width: 768px) or (pointer: coarse) {
+@media (max-width: 768px) or (pointer: coarse) and (orientation: portrait) {
     aside {
         height: 100dvh;
     }
@@ -495,5 +520,68 @@ p.description {
 
     .icon-container object {
         width: 48px;
+    }
+}
+
+@media (orientation: landscape) and (pointer: coarse) {
+    aside {
+        height: 100dvh;
+    }
+
+    aside a p {
+        margin-top: 32px;
+        font-size: 1rem;
+    }
+
+    aside nav ul li a {
+        font-size: 0.75rem;
+    }
+
+    aside #social ul li a svg {
+        width: 12px;
+    }
+    #hero {
+        gap: 8px;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        margin-left: 12.5vw;
+        font-size: 0.75rem;
+    }
+
+    #hero::before {
+        left: 15vw
+    }
+
+    #about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about h1, #about p {
+        margin-left: 0;
+    }
+
+    #container {
+        max-width: 300px;
+    }
+
+    .icon-container object {
+        width: 48px;
+    }
+
+    .skills-box {
+        flex-direction: row;
+    }
+
+    .menuToggle {
+        width: 24px
     }
 }
