@@ -584,4 +584,8 @@ p.description {
     .menuToggle {
         width: 24px
     }
+
+    .animate {
+        transition: none;
+    }
 }
