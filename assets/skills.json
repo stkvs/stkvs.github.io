@@ -11,7 +11,7 @@
     "frameworks" : [
         {"name": "React", "icon": "./assets/logos/react-original.svg"},
         {"name": "NextJS", "icon": "./assets/logos/nextjs-original.svg"},
-        {"name": "threeJS", "icon": "./assets/logos/threejs-original-wordmark.svg"},
+        {"name": "threeJS", "icon": "./assets/logos/threejs-light-original-wordmark.svg"},
         {"name": "viteJS", "icon": "./assets/logos/vitejs-original.svg"},
         {"name": "nodeJS", "icon": "./assets/logos/nodejs-original.svg"},
         {"name": "NumPy", "icon": "./assets/logos/numpy-original.svg"},
