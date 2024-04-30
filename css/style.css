@@ -513,14 +513,16 @@ p.description {
     #skills .skills-box {
         flex-direction: column;
         gap: 0;
+        width: unset;
+        gap: 16px;
     }
 
     #container {
-        max-width: 300px;
+        padding: 0;
     }
 
     .icon-container object {
-        width: 48px;
+        width: 32px;
     }
 
     .description {
@@ -576,10 +578,11 @@ p.description {
 
     #container {
         max-width: 300px;
+        justify-content: unset !important;
     }
 
     .icon-container object {
-        width: 48px;
+        width: 32px;
     }
 
     .skills-box {
