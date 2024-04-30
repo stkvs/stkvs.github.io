@@ -174,7 +174,7 @@ aside #social svg {
 
 @keyframes moveUp {
     from {
-        transform: translateY(-30px);
+        transform: translateY(100px);
     }
     to {
         transform: none;
@@ -184,7 +184,7 @@ aside #social svg {
 .animate {
     animation: 
         fadeIn 1s ease-in-out forwards,
-        moveUP 1s ease-in-out forwards;
+        moveUp 1s ease-in-out forwards;
 }
 
 .pages-container {
