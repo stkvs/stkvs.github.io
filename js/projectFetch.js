@@ -22,6 +22,8 @@ async function generateProjectCards(projects) {
     projects.forEach((projectData) => {
       const card = document.createElement("div");
       card.classList.add("project-card");
+
+      card.style.backgroundImage = `url(./assets/${projectData.image})`; // Set the background image
   
       const skillsContainer = document.createElement("div");
       skillsContainer.classList.add("skills");

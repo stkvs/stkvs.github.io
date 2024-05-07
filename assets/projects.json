@@ -1,24 +1,28 @@
 [
     {
       "name": "ThreeJS Interactive Saturn",
+      "image": "project-images/interactive-saturn.png",
       "description": "<b>An interactive Saturn model with post-processing shaders.</b> This project is my extension upon the threeJS earth as it explores using GLTFLoader and post-processing shaders to make it visually appealing. This also contains an information box which is lightly styled with css and can be toggled creating more functionality than the previous agenda, the interactive globe.",
       "skills": ["logos/html5-original.svg", "logos/css3-original.svg", "logos/javascript-original.svg", "logos/threejs-original-wordmark.svg"],
       "link": "https://stkvs.com/interactive-saturn/"
     },
     {
       "name": "Simple To-Do List",
+      "image": "project-images/todolist.png",
       "description": "<b>Simple To-Do-List Website, </b> made using Vanilla HTML, CSS and JavaScript. This To-do-list uses, User Cookies to maintain the tasks the user puts up.",
       "skills": ["logos/html5-original.svg", "logos/css3-original.svg", "logos/javascript-original.svg"],
       "link": "https://stkvs.com/todolist/"
     },
     {
         "name": "ThreeJS Interactive Globe",
+        "image": "project-images/threeJS_earth.png",
         "description": "<b>An interactive Globe with an atmosphere and modular text-box.</b> This project is one of my first attempts at trying to utilise the Javascript framework ThreeJS. In today's world, threeJS is one of the main frameworks which make web design look beautiful, in my opinion. And is what will eventually take over the future Web Design market. The majority of this project is written with Javascript.",
         "skills": ["logos/html5-original.svg", "logos/css3-original.svg", "logos/javascript-original.svg", "logos/threejs-original-wordmark.svg"],
         "link": "https://stkvs.com/interactive-globe/"
     },
     {
         "name": "Atmosify",
+        "image": "project-images/atmosify.png",
         "description": "A weather app that includes games and other utility functions.",
         "skills": ["logos/html5-original.svg", "logos/css3-original.svg", "logos/javascript-original.svg"],
         "link": "https://atmosify.tech/"

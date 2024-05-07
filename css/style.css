@@ -363,9 +363,10 @@ aside #social svg {
     text-align: left;
     width: min-content;
 }
-
-#projects .project-flexbox {
-    width: 90%
+.project-flexbox {
+    width: 90%;
+    display: flex;
+    justify-content: center;
 }
 
 .project {
@@ -394,9 +395,10 @@ aside #social svg {
     height: 300px;
     width: 300px;
     aspect-ratio: 1;
-    padding: 16px;
     background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 16px;
     display: flex;
     justify-content: center;
@@ -413,13 +415,37 @@ aside #social svg {
     text-decoration: none;
     color: white;
     height: 100%;
+    padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 16px;
+    transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-card a:hover p.description {
+    opacity: 1;
+}
+
+.project-card a:hover {
+    backdrop-filter: blur(20px);
 }
 
 p.description {
-    font-size: 0.75rem
+    font-size: 0.6rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media (pointer: coarse) {
+    p.description {
+        opacity: 1;
+    }
+
+    .project-card a {
+        backdrop-filter: blur(15px);
+    }
 }
 
 .project .project-card .skills {
@@ -428,17 +454,19 @@ p.description {
 }
 
 .project .project-card .skills img {
-    width: 48px;
+    width: 32px;
     aspect-ratio: 1;
     padding: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .project .project-card .skills img:hover {
     scale: 1.05;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .title:hover::before {
