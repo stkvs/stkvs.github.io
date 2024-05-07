@@ -446,7 +446,7 @@ p.description {
 
     .project-card a {
         backdrop-filter: blur(15px);
-        --webkit-backdrop-filter: blur(20px);
+        --webkit-backdrop-filter: blur(15px);
     }
 }
 
@@ -461,6 +461,7 @@ p.description {
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
