@@ -429,6 +429,7 @@ aside #social svg {
 
 .project-card a:hover {
     backdrop-filter: blur(20px);
+    --webkit-backdrop-filter: blur(20px);
 }
 
 p.description {
@@ -445,6 +446,7 @@ p.description {
 
     .project-card a {
         backdrop-filter: blur(15px);
+        --webkit-backdrop-filter: blur(20px);
     }
 }
 
