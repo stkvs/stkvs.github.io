@@ -1,5 +1,12 @@
 [
     {
+      "name":"Recipify | Recipe Generator",
+      "image": "project-images/recipify.png",
+      "description": "<b>Recipify : Generates recipes tailored by selectable ingredients.</b> Sourcing dataset provided by BBCGoodfoods, it leverages from JSON data manipulation, Python scripts and JavaScript to fulfil the fields of ingredients and loading each of them as a selectable element. Recipify will generate a recipe according to the selection based from most similar to least.",
+      "skills": ["logos/html5-original.svg", "logos/css3-original.svg", "logos/javascript-original.svg", "logos/python-original.svg", "logos/json-original.svg"],
+      "link": "https://recipify.tech/"
+    },
+    {
       "name": "ThreeJS Interactive Saturn",
       "image": "project-images/interactive-saturn.png",
       "description": "<b>An interactive Saturn model with post-processing shaders.</b> This project is my extension upon the threeJS earth as it explores using GLTFLoader and post-processing shaders to make it visually appealing. This also contains an information box which is lightly styled with css and can be toggled creating more functionality than the previous agenda, the interactive globe.",
