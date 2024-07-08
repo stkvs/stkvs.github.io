@@ -4,6 +4,7 @@
         {"name": "CSS3", "icon": "./assets/logos/css3-original.svg"},
         {"name": "JavaScript", "icon": "./assets/logos/javascript-original.svg"},
         {"name": "TypeScript", "icon": "./assets/logos/typescript-original.svg"},
+        {"name": "PHP", "icon": "./assets/logos/php-original.svg"},
         {"name": "Python", "icon": "./assets/logos/python-original.svg"},
         {"name": "C#", "icon": "./assets/logos/csharp-original.svg"},
         {"name": "JSON", "icon": "./assets/logos/json-original.svg"}
