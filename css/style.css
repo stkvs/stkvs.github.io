@@ -393,7 +393,6 @@ aside #social svg {
 
 .project .project-card {
     height: 300px;
-    width: 300px;
     aspect-ratio: 1;
     background-color: rgba(255, 255, 255, 0.05);
     background-position: center center;
