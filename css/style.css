@@ -325,7 +325,8 @@ aside #social svg {
     height: min-content;
 }
 
-.icon-container object {
+.icon-container img {
+    position: relative;
     width: clamp(72px, 88px, 128px);
     aspect-ratio: 1;
     padding: 8px;
@@ -335,7 +336,7 @@ aside #social svg {
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.icon-container object:hover {
+.icon-container img:hover {
     scale: 1.075;
     background-color: rgba(255, 255, 255, 0.1);
 }

@@ -19,9 +19,9 @@ async function LanguageGrid(skills) {
     const languageGrid = document.querySelector(".languages .icon-container");
     const langList = skills.languages;
     langList.forEach((lang) => {
-        const langIcon = document.createElement('object');
-        langIcon.data = lang.icon;
-        langIcon.type = "image/svg+xml";
+        const langIcon = document.createElement('img');
+        langIcon.src = lang.icon;
+        langIcon.title = lang.name;
         languageGrid.appendChild(langIcon);
     });
 }
@@ -30,9 +30,9 @@ async function FrameworkGrid(skills) {
     const frameworkGrid = document.querySelector(".frameworks .icon-container");
     const frameworkList = skills.frameworks;
     frameworkList.forEach((framework) => {
-        const frameworkIcon = document.createElement('object');
-        frameworkIcon.data = framework.icon;
-        frameworkIcon.type = "image/svg+xml";
+        const frameworkIcon = document.createElement('img');
+        frameworkIcon.src = framework.icon;
+        frameworkIcon.title = framework.name;
         frameworkGrid.appendChild(frameworkIcon);
     });
 }
