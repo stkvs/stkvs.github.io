@@ -1,0 +1,90 @@
+{
+    "scripting": [
+        {
+            "name": "Python",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+        },
+        {
+            "name": "JavaScript",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        },
+        {
+            "name": "TypeScript",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        },
+        {
+            "name": "C#",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+        }
+    ],
+    "frontend": [
+        {
+            "name": "HTML",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        },
+        {
+            "name": "CSS",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"   
+        },
+        {
+            "name": "TailwindCSS",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+        }
+    ],
+    "backend": [
+        {
+            "name": "PHP",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+        },
+        {
+            "name": "Supabase",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg"
+        },
+        {
+            "name": "MySQL",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+        }
+    ], 
+    "frameworks": [
+        {
+            "name": "Next.js",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+        },
+        {
+            "name": "Vite",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+        },
+        {
+            "name": "React",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        },
+        {
+            "name": "Three.js",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg"
+        }
+    ],
+    "libraries": [
+         {
+            "name": "OpenCV",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
+        },
+        {
+            "name": "Axios",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain-wordmark.svg"
+        },
+        {
+            "name": "Numpy",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
+        },
+        {
+            "name": "Pandas",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
+        }
+    ],
+    "tools": [
+        {
+            "name": "Git",
+            "element": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+        }   
+    ]
+}

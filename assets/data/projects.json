@@ -1,0 +1,65 @@
+[
+    {
+        "title": "To-do List",
+        "description": "Simple todo list website that stores tasks in Cookies.",
+        "image": "/assets/images/projects/todolist.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "featured": false,
+        "links": {
+            "github": "https:/github.com/stkvs/todolist",
+            "live": "https://stkvs.com/todolist"
+        }
+    },
+    {
+        "title": "FloatWeb",
+        "description": "A website for a digital agency that specializes in web development and SEO Optimisation.",
+        "image": "/assets/images/projects/floatweb.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "featured": true,
+        "links": {
+            "live": "https://floatweb.co.uk"
+        }
+    },
+    {
+        "title": "Gesture Volume Control",
+        "description": "A volume control script that allows users to control the volume of valid music apps / browsers using hand gestures.",
+        "image": "/assets/images/projects/volumecontrol.png",
+        "tags": ["Python", "OpenCV", "MediaPipe"],
+        "featured": true,
+        "links": {
+            "github": "https://github.com/stkvs/HandVolumeHandler"
+        }
+    },
+    {
+        "title": "TCGP Simulator",
+        "description": "A TCGP simulator that allows users to open packs from the Pokemon TCGP game.",
+        "image": "/assets/images/projects/tcgp.png",
+        "tags": ["Next.js", "JavaScript"],
+        "featured": true,
+        "links": {
+            "live": "https://tcgp.vercel.app"
+        }
+    },
+    {
+        "title": "Interactive Saturn",
+        "description": "An interactive 3D model of Saturn that allows users to explore the planet and its rings.",
+        "image": "/assets/images/projects/interactive-saturn.png",
+        "tags": ["HTML", "CSS", "JavaScript", "Three.js"],
+        "featured": false,
+        "links": {
+            "github": "https://github.com/stkvs/interactive-saturn",
+            "live": "https://stkvs.com/interactive-saturn.com"
+        }
+    },
+    {
+        "title": "Recipify",
+        "description": "A recipe creator that allows users to select ingredients and create a recipe.",
+        "image": "/assets/images/projects/recipify.png",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "featured": false,
+        "links": {
+            "github": "https://github.com/stkvs/recipify",
+            "live": "https://stkvs.com/recipify"
+        }
+    }
+]

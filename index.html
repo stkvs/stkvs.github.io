@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantas Statkevicius | Portfolio</title>
+    <title>stkvs.com | Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <meta content="Mantas Statkevicius | stkvs.com" property="og:title" />
     <meta content="Mantas Statkevicius, Porfolio, HTML, JavaScript, CSS, Python, C#, threeJS, ViteJS, nodeJS, React, JSON, NextJS, Pandas, Numpy, Student, Programmer, Designer, Web Developer" name="keywords">
     <meta content="Mantas Statkevicius' - A dedicated student pursuing full-time studies and aspiring to become a proficient full-stack software engineer and web developer." property="og:description" />
     <meta name="description" content="Mantas Statkevicius' - A dedicated student pursuing full-time studies and aspiring to become a proficient full-stack software engineer and web developer.">
     <meta content="https://stkvs.com" property="og:url" />
-    <meta content="assets/ms-logo-main.png" property="og:image" />
+    <meta content="assets/images/ms-logo-main.png" property="og:image" />
     <meta content="#111111" data-react-helmet="true" name="theme-color" />
-    <link rel="icon" href="assets/ms-logo-main.png" type="image/x-icon"/>
-    <link rel="apple-touch-icon" href="assets/ms-logo-main.png" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/ms-logo-main.png" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="assets/images/ms-logo-main.png" />
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1NSR6BQ7W"></script>
@@ -25,74 +27,144 @@
   gtag('config', 'G-D1NSR6BQ7W');
 </script>
 <body>
-    <aside class="sidebar">
-        <a href="#home">
-            <p>stkvs<span>.</span></p>
-        </a>
-
-        <nav>
-            <ul>
-                <li><a class="links" href="#about">About</a></li>
-                <li><a class="links" href="#skills">Skills</a></li>
-                <li><a class="links" href="#projects">Projects</a></li>
-            </ul>
-        </nav>
-
-        <div id="social">
-            <ul>
-                <li><a class="links" href="https://github.com/stkvs" target="_blank">     
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                </a></li>
-                <li><a class="links" href="https://www.instagram.com/mstkvs/" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                </a></li>
-                <li><a class="links" href="https://twitter.com/MantasStkvs" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-                </a></li>
-            </ul>
-        </div>
-    </aside>
-    <div id="background"></div>
-
-    <div class="pages-container">
-        <div id="home" class="page">
-            <div id="hero">
-                <h1>Mantas <span>Statkevicius</span></h1>
-                <p>Artisan | Developer</p>
-            </div>
-        </div>
-        <div id="about" class="page">
-            <h1>About me<span>.</span></h1>
-            <p>
-                <strong>Hey there! 👋</strong> 
-                My name is Mantas Statkevicius and I am a novice creative developer. Originally from Kaunas, Lithuania 🇱🇹 - my family and I moved to the UK 🇬🇧 when I was just three years old, and putting me in this new environment paved the way for my current career path. <br><br> Ever since I was young, I loved to be creative and to construct things, these <i>things</i> were all the stepping stones that led me to who I am today. I was and still am incredibly in love with technology and programming, it has always been a passion of mine to one day become a Web/App Developer and a Full-stack software Engineer. <br><br> <b>So join me along my journey!</b>
-            </p>
-        </div>
-        <div id="skills" class="page">
-            <div class="skills-box">
-                <div class="languages" id="container">
-                    <div class="title">Languages</div>
-                    <div class="icon-container"></div>
-                </div>
-                <div class="frameworks" id="container">
-                    <div class="title">Frameworks</div>
-                    <div class="icon-container"></div>
+    <div id="home" class="page">
+        <div class="content">
+            <div class="me">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQFCe9bKnCWFDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718270020288?e=2147483647&v=beta&t=9OIKHbpvqo35gnfEOi4hYqWnycX7hB2YHj6TdPlGvmA" alt="Mantas Statkevicius">
+                <div class="info">
+                    <!-- <a href="./pages/learnmore"><h3>Mantas Statkevicius <span>(artisan)</span></h3></a> -->
+                    <h3>Mantas Statkevicius <span>(artisan)</span></h3>
+                    <div class="location">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <p>West Sussex, UK</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="projects" class="page">
-            <div class="title-container">
-                <h1 class="title">Projects</h1>
+            <div class="title">
+                <span>
+                    <h1>JUNIOR WEB</h1>
+                    <h1>DEVELOPER</h1>
+                </span>
+                <a href="#contact">
+                    <i class="bi bi-arrow-right"></i>
+                    <p>Contact Me</p>
+                </a>
             </div>
-            <div class="project-flexbox">
-
+            <div class="more">
+                <div class="redirects">
+                    <div class="on-site">
+                        <a href="#experience">
+                            <i class="bi bi-arrow-right"></i>
+                            <p>Experience</p>
+                        </a>
+                        <a href="#skills">
+                            <i class="bi bi-arrow-right"></i>
+                            <p>Skills</p>
+                        </a>
+                        <a href="#projects">
+                            <i class="bi bi-arrow-right"></i>
+                            <p>Projects</p>
+                        </a>
+                    </div>
+                    <div class="off-site">
+                        <a href="https://github.com/stkvs" target="_blank">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://uk.linkedin.com/in/mantas-statkevicius-311061313" target="_blank">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mstkvs/" target="_blank">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <h2><i class="bi bi-arrow-90deg-down"></i> Core Tech Stack</h2>
+                    <div class="stacks">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />  
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/skillsFetch.js"></script>
-    <script src="js/projectFetch.js"></script>
-    <script src="js/onScrollAnimation.js"></script>
+    <div id="experience" class="page">
+        <div class="content">
+            <h2>Experience</h2>
+            <div class="button-toggle">
+                <button data="experience" id="experience-button">Experience</button>
+                <button data="education" id="education-button">Education</button>
+            </div>
+            <div class="results"></div>
+        </div>
+    </div>
+    <div id="skills" class="page">
+        <div class="content">
+            <div class="title">
+                <h2>About my Tech Stack</h2>
+            </div>
+            <div class="container">
+                <p>These are the technologies I’m most proficient in and use regularly in my projects..</p>
+                <div class="core-tech-stack"></div>
+                <p>Beyond these, I also have experience with a broader range of tools and frameworks that support different development needs.</p>
+                <div class="other-tech"></div>                
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="page">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="page">
+        <div class="content">
+            <h2>Contact</h2>
+            <div class="container">
+                <p>Have a project in mind or just want to connect? I'm always open to new opportunities, collaborations, or a quick chat about tech. Feel free to reach out—I'd love to hear from you.</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your Name" required maxlength="50">
+                <input type="email" placeholder="Your Email" required maxlength="100">
+                <textarea placeholder="Your Message" required maxlength="500"></textarea>
+                <button class="submit-button">Send Message</button>
+            </div>
+        </div>    
+    </div>
+    <footer>
+        <div class="content">
+            <div class="footer-links">
+                <a href="#home"><i class="bi bi-arrow-right"></i><p>Home</p></a>
+                <a href="#experience"><i class="bi bi-arrow-right"></i><p>Experience</p></a>
+                <a href="#skills"><i class="bi bi-arrow-right"></i><p>Skills</p></a>
+                <a href="#projects"><i class="bi bi-arrow-right"></i><p>Projects</p></a>
+                <a href="#contact"><i class="bi bi-arrow-right"></i><p>Contact</p></a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/stkvs" target="_blank">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://uk.linkedin.com/in/mantas-statkevicius-311061313" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/mstkvs/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div></a></div>
+            <p>&copy; <script>document.write(new Date().getFullYear());</script> Mantas Statkevicius - stkvs.com. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/PictureHover.js"></script>
+    <script src="scripts/HandleExperience.js"></script>
+    <script src="scripts/HandleTechStacks.js"></script>
+    <script src="scripts/HandleProjects.js"></script>
+    <script src="scripts/HandleEmail.js"></script>
 </body>
 </html>

@@ -1,0 +1,20 @@
+[
+    {
+        "company": "Patch Evergreen",
+        "role": "Intern Full Stack Developer",
+        "timeframe": "Sep 2024 - January 2025",
+        "img": "/assets/images/pe.png"
+    },
+    {
+        "company": "Nexarda",
+        "role": "Volunteer Web Developer",
+        "timeframe": "Nov 2023 - Nov 2024",
+        "img": "/assets/images/nx.png"
+    },
+    {
+        "company": "Springboard Media",
+        "role": "Project Manager",
+        "timeframe": "Feb 2024 - June 2024",
+        "img": "/assets/images/sb.png"
+    }
+]
