@@ -34,7 +34,7 @@
         "title": "TCGP Simulator",
         "description": "A TCGP simulator that allows users to open packs from the Pokemon TCGP game.",
         "image": "/assets/images/projects/tcgp.png",
-        "tags": ["Next.js", "JavaScript"],
+        "tags": ["Vite", "JavaScript"],
         "featured": true,
         "links": {
             "live": "https://tcgp.vercel.app"
